@@ -1,12 +1,19 @@
 undefined
 undefined
-(node:18048) NOTE: We are formalizing our plans to enter AWS SDK for JavaScript (v2) into maintenance mode in 2023.
+Heelllooo
+Heelllooo
+ReferenceError: bind is not defined
+    at Server.onListening (D:\USquare\U-SQUARE\USquare-Solutions-Backend-master\app.js:182:27)
+    at Server.emit (node:events:513:28)
+    at Server.emit (node:domain:489:12)
+    at emitListeningNT (node:net:1774:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+(node:9740) NOTE: We are formalizing our plans to enter AWS SDK for JavaScript (v2) into maintenance mode in 2023.
 
 Please migrate your code to use AWS SDK for JavaScript (v3).
 For more information, check the migration guide at https://a.co/7PzMCcy
 (Use `node --trace-warnings ...` to show where the warning was created)
-(node:18048) [MONGODB DRIVER] Warning: Current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
-(node:18048) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:9740) [MONGODB DRIVER] Warning: Current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:9740) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
 MongoDB connected…
 MongoDB connected…
-[0mGET / [32m200 [0m4.167 ms - 57[0m

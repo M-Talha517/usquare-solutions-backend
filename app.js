@@ -11,8 +11,8 @@ console.log = function (d) {
   log_stderr.write(util.format(d) + "\n");
 };
 
-var access = fs.createWriteStream(__dirname + "/stdout.log", { flags: "w" });
-process.stdout.write = process.stderr.write = access.write.bind(access);
+// var access = fs.createWriteStream(__dirname + "/stdout.log", { flags: "w" });
+// process.stdout.write = process.stderr.write = access.write.bind(access);
 
 process.on("uncaughtException", function (err) {
   console.error(err && err.stack ? err.stack : err);
@@ -40,6 +40,7 @@ var routeTechnology = require("./app_server/routes/route.technology.js");
 var routeNewsletter = require("./app_server/routes/route.newsletter.js");
 var routeCareer = require("./app_server/routes/route.career.js");
 var routeTeamMember = require("./app_server/routes/route.team.js");
+var routeTestimonial = require("./app_server/routes/route.testimonial.js");
 
 var cors = require("cors");
 
@@ -86,6 +87,7 @@ app.use("/technology", routeTechnology);
 app.use("/newsletter", routeNewsletter);
 app.use("/career", routeCareer);
 app.use("/team-member", routeTeamMember);
+app.use("/testimonial", routeTestimonial);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
