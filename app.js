@@ -41,6 +41,7 @@ var routeNewsletter = require("./app_server/routes/route.newsletter.js");
 var routeCareer = require("./app_server/routes/route.career.js");
 var routeTeamMember = require("./app_server/routes/route.team.js");
 var routeTestimonial = require("./app_server/routes/route.testimonial.js");
+var routeAboutUs = require("./app_server/routes/route.aboutus.js");
 
 var cors = require("cors");
 
@@ -88,6 +89,7 @@ app.use("/newsletter", routeNewsletter);
 app.use("/career", routeCareer);
 app.use("/team-member", routeTeamMember);
 app.use("/testimonial", routeTestimonial);
+app.use("/about-us", routeAboutUs);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
